@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textSize="40sp"
+                android:fontFamily="sans-serif-black"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="0"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/text"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3 POINTS"
+                android:onClick="point3A"
+                android:id="@+id/point3"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+2 POINTS"
+                android:id="@+id/point2"
+                android:layout_margin="8dp"
+                android:onClick="point2A"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+            <Button
+                android:id="@+id/ft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:onClick="Free"
+                android:text="FREE THROW" />
+
+        </LinearLayout>
+         <View
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#000000"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textSize="40sp"
+                android:fontFamily="sans-serif-black"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:id="@+id/text1"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3 POINTS"
+                android:onClick="point3B"
+                android:id="@+id/point31"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+2 POINTS"
+                android:id="@+id/point21"
+                android:layout_margin="8dp"
+                android:onClick="point2B"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FREE THROW"
+                android:id="@+id/ft1"
+                android:layout_margin="8dp"
+                android:onClick="Free"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_marginTop="50dp"
+        android:onClick="reset"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:id="@+id/reset"/>
+</LinearLayout>
